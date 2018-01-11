@@ -8,10 +8,6 @@
   overflow: visible; 
   background: #FFFFFF url('../images/santa.gif') no-repeat center center; 
 }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
   body {
     font-family: 'Lato', arial, sans-serif;
     color: #434343;
