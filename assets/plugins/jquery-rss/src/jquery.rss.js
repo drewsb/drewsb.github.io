@@ -10,7 +10,7 @@
 
     this.options = $.extend({
       ssl: true,
-      host: 'https://www.feedrapp.info',
+      host: 'www.feedrapp.info',
       limit: null,
       key: null,
       layoutTemplate: '<ul>{entries}</ul>',
@@ -30,8 +30,8 @@
     }, options || {});
 
     // The current SSL certificate is only valid for *.herokuapp.com
-    if (this.options.ssl && (this.options.host === 'https://www.feedrapp.info')) {
-      this.options.host = 'https://feedrapp.herokuapp.com';
+    if (this.options.ssl && (this.options.host === 'www.feedrapp.info')) {
+      this.options.host = 'feedrapp.herokuapp.com';
     }
 
     this.callback = callback || this.options.success;
@@ -51,7 +51,7 @@
   ];
 
   RSS.prototype.load = function (callback) {
-    var apiProtocol = 'https' + (this.options.ssl ? 's' : '');
+    var apiProtocol = 'http' + (this.options.ssl ? 's' : '');
     var apiHost     = apiProtocol + '://' + this.options.host;
     var apiUrl      = apiHost + '?callback=?&q=' + encodeURIComponent(this.url);
 
