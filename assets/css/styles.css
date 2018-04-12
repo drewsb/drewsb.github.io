@@ -104,7 +104,8 @@
   }
   ul.list-exp {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 22px ;
+    text-indent: -26px ;
   }
   ul.list-exp li:before {
     margin-right: .5em;
@@ -483,6 +484,7 @@ iframe {
 /* List section */
 .list ul li {
   margin-bottom: 10px;
+  padding-left: 22px ;
 }
 .list ul li .fa {
   margin-right: 5px;
