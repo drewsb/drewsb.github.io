@@ -1,0 +1,250 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+ }
+
+.v1 {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    border-left: 3px solid  #008CBA;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#headers {
+	width: 100%;
+	margin: 2% 5% 2% 2%;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#headers > li {
+	display: inline-block;
+	margin-right: 1%;
+	margin-left: 1%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.header-item {
+	color: black;
+	height: 80%;
+	width: auto;
+	padding: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: white; 
+	border: 2px solid #008CBA;
+}
+
+.header-item:hover {
+	background-color: #008CBA;
+	color: white;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content option {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content option:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#counters > p {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10%;
+}
+
+table.center {
+	  margin-left:auto;
+    margin-right:auto;
+    margin-bottom:: 5%;
+}
+
+#tableContainer {
+	align: center;
+}
+
+td {
+	border: 1px solid;
+	border-color: #efeff5;
+	width: 25px;
+	height: 25px;
+}
+
+td.camo {
+  background-color:#e6dfcb;
+}
+
+td.default.visited {
+	background-color:#4dffc3;
+}
+
+td.midnight.visited {
+  background-color:#4d79ff;
+}
+
+td.sunset.visited {
+  background-color:#ff8c1a;
+}
+
+td.camo.visited {
+  background-color:#78866b;
+}
+td.hovered {
+  background-color: yellow;
+}
+
+td.default.alive {
+	background-color:#00ace6;
+}
+
+td.midnight.alive {
+  background-color: black;
+}
+
+td.sunset.alive {
+  background-color:#e60000;
+}
+
+td.camo.alive {
+  background-color:#604439;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 25px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background:  #008CBA;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:  #008CBA;
+    cursor: pointer;
+}
+
+#switch-trail {
+	font-size: 20px;
+	cursor: pointer;
+  margin-bottom: 0px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .switch-slider {
+  background-color: #008CBA;
+}
+
+input:focus + .switch-slider {
+  box-shadow: 0 0 1px #008CBA;
+}
+
+input:checked + .switch-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch-slider.round {
+  border-radius: 34px;
+}
+
+.switch-slider.round:before {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration:none;
+  z-index: 0;
+}

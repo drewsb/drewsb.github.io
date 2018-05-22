@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drew Boyette</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Drew Boyette">    
+    <link rel="shortcut icon" href="assets/images/palm-tree-shape.png">  
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- Custom CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/game.css">
+</head> 
+<body>
+    <div style="display: none" id="hideAll">&nbsp;</div>
+    <script type="text/javascript">
+     document.getElementById("hideAll").style.display = "block";
+ </script> 
+ <ul id="headers">
+    <li> 
+        <div onClick = "runGame()" class="header-item noselect" id="runButton"> Run </div>
+    </li>
+    <li> 
+        <div onClick = "stepGame()" class="header-item noselect"> Step </div>
+    </li>
+    <div class="v1"> </div>
+    <li> 
+        <div onClick = "clearGame()" class="header-item noselect"> Clear </div>
+    </li>
+    <li>
+        <div class="header-item">
+            <div id ="depth" class="dropheader noselect"> Size </div>
+            <datalist id="depthDropdown" class="dropdown-content noselect">
+                <option value = "low" class = "depth-item">Low</option>
+                <option value = "medium" class = "depth-item">Medium</option>
+                <option value = "high" class = "depth-item">High</option>
+            </datalist>
+        </div>
+    </li>
+    <div class="v1"> </div>
+    <li>
+        <div class="header-item">
+            <div id = "pattern" class="dropheader noselect"> Patterns </div>
+            <div id="patternDropdown" class="dropdown-content noselect">
+                <option value = "acorn" class = "pattern-item">Acorn</option>
+                <option value = "box" class = "pattern-item">Box</option>
+                <option value = "horizontal-line" class = "pattern-item">Horizontal Line</option>
+
+                <option value = "glider" class = "pattern-item">Glider</option>
+                <option value = "glider-gun" class = "pattern-item">Glider Gun</option>
+                <option value = "shooting-stars" class = "pattern-item">Shooting Stars</option>
+                <option value = "pyramid" class = "pattern-item">Pyramid</option>
+                <option value = "spaceship" class = "pattern-item">Spaceship</option>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="header-item">
+            <div id = "theme" class="dropheader noselect"> Themes </div>
+            <div id="themeDropdown" class="dropdown-content noselect">
+                <option value = "default" class = "theme-item">Default</option>
+                <option value = "midnight" class = "theme-item">Midnight</option>
+                <option value = "sunset" class = "theme-item">Sunset</option>
+                <option value = "camo" class = "theme-item">Camo</option>
+            </div>
+        </div>
+    </li>
+    <div class="v1"> </div>
+    <li>
+        <!-- Rounded switch -->
+        <p id="switch-trail" class="noselect"> Trail <span id="trail"> On </span> </p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="switch-slider round"></span>
+      </label>
+  </li>
+</ul>
+<div id="counters">
+    <p> Live Cells: <span id="cellCount"></span></p>
+    <p> Generation: <span id="generation"></span></p>
+</div>
+<div id="tableContainer"> </div>
+
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+
+<script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!-- custom js -->
+<script type="text/javascript" src="assets/js/greeting.js"></script>            
+<script type="text/javascript" src="assets/js/game-functions.js"></script>            
+<script type="text/javascript" src="assets/js/game.js"></script>            
+
+</body>
+</html> 
+
