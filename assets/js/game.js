@@ -283,11 +283,11 @@ $(function() {
     $('.depth-item').click(function() {
         clearGame();
         var newDepth = $(this).val();
-        $('#tableContainer').html(generateGrid(depth));
+        $('#tableContainer').html(generateGrid(newDepth));
         currDepth = newDepth;
         currRows = getRows(currDepth);
         currCols = getCols(currDepth);
-        setCellSizes(depth);
+        setCellSizes(currDepth);
         addGridClickEvents();
         updateTheme(theme, theme, false);
     });
